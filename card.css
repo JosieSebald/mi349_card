@@ -24,13 +24,14 @@ h2 {
     margin: 0 auto;
     width: 400px;
     text-align: center;
-    box-shadow: rgba(0,0,0,0.1) 0 0 20px;
+    box-shadow: rgba(0,0,0,0.1) 0 10px 20px;
     /* red, green, blue, alpha (transparency)
     x offset, y offset, spread of blur) */
     border: 1px solid #aaa;
 }
 
 .card .avatar {
+    box-shadow: rgba (0, 0, 0, 0.1) 0 10px 10px;
     width: 100px;
     border-radius: 50%; /* rounds out images */
     margin-top: -50px;
@@ -47,4 +48,10 @@ h2 {
     display: inline-block; /* puts images next to each
     other instead of on top of each other */
     padding: 20px 10px; /* top and bottom, left and right */
+}
+
+.contacts li a img:hover {
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+    /* executes when someone hovers over image  */
 }
