@@ -9,9 +9,18 @@ img {
     width: 100%;
 }
 
+h1 {
+    margin: 15px 0; /* top and bottom, left and right */
+}
+
+h2 {
+    margin: 0;
+    font-weight: 100; /* thins out font weight */
+}
+
 .card {
     background-color: #f3f3f3;
-    border-radius: 15px;
+    border-radius: 15px; /* rounds corners of card */
     margin: 0 auto;
     width: 400px;
     text-align: center;
@@ -19,6 +28,19 @@ img {
 
 .card .avatar {
     width: 100px;
-    border-radius: 50%; 
+    border-radius: 50%; /* rounds out images */
     margin-top: -50px;
 } 
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* removes bullets */
+}
+
+.contacts li {
+    width: 30px;
+    display: inline-block; /* puts images next to each
+    other instead of on top of each other */
+    padding: 20px 10px; /* top and bottom, left and right */
+}
